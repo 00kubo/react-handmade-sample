@@ -21,7 +21,7 @@
       "js"
     ],
     "setupFilesAfterEnv": [
-      "<rootDir>/scripts/setupTests.ts"
+      "<rootDir>/test/setupTests.js"
     ],
     "moduleDirectories": [
       "node_modules"
@@ -43,6 +43,8 @@
   "devDependencies": {
     "@types/enzyme": "^3.10.3",
     "@types/jest": "^24.0.21",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.3",
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
     "enzyme": "^3.10.0",
@@ -58,10 +60,8 @@
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
     "prettier_d": "^5.7.4",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "styled-components": "^4.4.1",
     "ts-jest": "^24.1.0",
+    "ts-loader": "^6.2.1",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
     "typescript": "^3.6.4",
     "webpack": "^4.41.2",
@@ -69,8 +69,8 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
-    "@types/react": "^16.9.11",
-    "@types/react-dom": "^16.9.3",
-    "ts-loader": "^6.2.1"
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "styled-components": "^4.4.1"
   }
 }

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-function Result(props: any) {
+function Result(props: {count: number}) {
   return <h1>{props.count}</h1>;
 }
 
