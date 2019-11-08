@@ -3,7 +3,8 @@
     "start": "webpack-dev-server --hot --config webpack.dev.js",
     "lint": "eslint 'src/**/*.ts[x]'",
     "test:onetime": "jest --env=jsdom",
-    "test": "jest --env=jsdom --watch"
+    "test": "jest --env=jsdom --watch",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "jest": {
     "transformIgnorePatterns": [
@@ -35,18 +36,21 @@
       }
     },
     "testMatch": [
-      "**/__tests__/*.+(ts|tsx|js)",
-      "**/*\\.spec\\.+(ts|tsx|js)",
-      "**/*\\.test\\.+(ts|tsx|js)"
+      "**/stories/*.+(ts|tsx|js)"
     ]
   },
   "devDependencies": {
+    "@material-ui/core": "^4.6.0",
+    "@storybook/addon-storyshots": "^5.2.5",
+    "@storybook/react": "^5.2.5",
     "@types/enzyme": "^3.10.3",
     "@types/jest": "^24.0.21",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",
+    "@types/styled-components": "^4.1.21",
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
+    "babel-loader": "^8.0.6",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.6.0",

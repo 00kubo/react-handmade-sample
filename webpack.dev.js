@@ -5,6 +5,7 @@ module.exports = Object.assign(config(false), {
   devServer: {
     port: 3000,
     contentBase: 'public',
+    open: true,
     openPage: 'index.html',
     watchContentBase: true,
     inline: true
