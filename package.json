@@ -22,13 +22,13 @@
       "js"
     ],
     "setupFilesAfterEnv": [
-      "<rootDir>/test/setupTests.js"
+      "<rootDir>/test/setupTests.ts"
     ],
     "moduleDirectories": [
       "node_modules"
     ],
     "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
+      "^.+\\.(ts|tsx)?$": "ts-jest"
     },
     "globals": {
       "ts-jest": {
@@ -44,6 +44,7 @@
     "@storybook/addon-storyshots": "^5.2.5",
     "@storybook/react": "^5.2.5",
     "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.21",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",
